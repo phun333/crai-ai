@@ -18,5 +18,5 @@ blogda ise
 
 blog oluşturacak bütün bilgiler ile
 
-generative ai api key : 
+generative ai api key : AIzaSyDCq1f1V-JSlbcZRqnvkr3AIswfgVTB57U
 
