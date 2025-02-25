@@ -1,5 +1,7 @@
 # Instagram Post Oluşturucu
 
+> **Not**: Bu proje, bir hackathon etkinliği kapsamında geliştirilen bir web sitesi için oluşturulmuş bir prototiptir.
+
 Bu Python uygulaması, şirketlerin Instagram için post açıklamaları ve hashtagler oluşturmasına yardımcı olmak için Google'ın Gemini AI modelini kullanır.
 
 ## Özellikler
