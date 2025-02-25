@@ -1,0 +1,97 @@
+# Python için .gitignore
+
+# Byte-compiled / optimized / DLL dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C uzantıları
+*.so
+
+# Dağıtım / paketleme
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Yükleyici günlükleri
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Birim test / kapsam raporları
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Sphinx belgeleri
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Ortamlar
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder proje ayarları
+.spyderproject
+.spyproject
+
+# Rope proje ayarları
+.ropeproject
+
+# mkdocs belgeleri
+/site
+
+# mypy
+.mypy_cache/
+
+# IDE dosyaları
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db 

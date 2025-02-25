@@ -1,40 +1,54 @@
-# Sosyal Medya İçerik Oluşturma Aracı
+# Instagram Post Oluşturucu
 
-Bu CLI uygulaması, şirketler için otomatik olarak sosyal medya içeriği ve blog yazıları oluşturur.
+Bu Python uygulaması, şirketlerin Instagram için post açıklamaları ve hashtagler oluşturmasına yardımcı olmak için Google'ın Gemini AI modelini kullanır.
 
 ## Özellikler
 
-- Şirket bilgilerini kaydetme
-- DALL-E ile görsel oluşturma
-- Instagram gönderisi oluşturma
-- Blog yazısı oluşturma
+- Şirket bilgilerine göre özelleştirilmiş Instagram post açıklamaları oluşturur
+- İlgili hashtagler önerir
+- Kullanıcı dostu komut satırı arayüzü
+- Google Gemini AI modelini kullanır
 
 ## Kurulum
 
-1. Gerekli paketleri yükleyin:
+1. Repoyu klonlayın:
+```bash
+git clone <repo-url>
+cd instagram-post-olusturucu
+```
+
+2. Gerekli paketleri yükleyin:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. `.env` dosyasını düzenleyin:
-- OPENAI_API_KEY değerini kendi OpenAI API anahtarınızla güncelleyin
-- Google Vision API anahtarı zaten ayarlanmış durumda
+3. `.env` dosyasını oluşturun ve Google API anahtarınızı ekleyin:
+```
+GOOGLE_API_KEY=sizin_api_anahtariniz
+```
 
 ## Kullanım
 
-Uygulamayı başlatmak için:
+Uygulamayı çalıştırmak için:
 
 ```bash
-python src/main.py create-content
+python instagram_post_generator.py
 ```
 
-Program sizi adım adım yönlendirecektir:
-1. Şirket bilgilerini girin
-2. Görsel seçin veya oluşturun
-3. İçerik türünü seçin (Instagram/Blog)
+Uygulama size aşağıdaki bilgileri soracaktır:
+- Şirket adı
+- Şirket türü
+- Şirket açıklaması
+- Post hakkında açıklama
+
+Bu bilgileri girdikten sonra, uygulama AI tarafından oluşturulan bir Instagram post açıklaması ve ilgili hashtagleri gösterecektir.
 
 ## Gereksinimler
 
-- Python 3.8+
-- OpenAI API anahtarı
-- Google Cloud Vision API anahtarı 
+- Python 3.7+
+- python-dotenv
+- google-generativeai
+
+## Not
+
+Bu uygulama için geçerli bir Google API anahtarına ihtiyacınız vardır. [Google AI Studio](https://makersuite.google.com/app/apikey) üzerinden bir API anahtarı alabilirsiniz. 
